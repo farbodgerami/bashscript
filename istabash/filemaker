@@ -1,0 +1,34 @@
+#!/bin/bash
+for i in {a..d};do
+mkdir $i
+    for j in $(seq 5 7);do
+        mkdir $i/$j
+    done
+done
+
+for i in $(seq 1 500);do
+    touch "friends  $i.mp4"
+done
+
+IFS=$'\n'
+for file in *.mp4;do 
+    season=1
+    mkdir season.$season
+    for i in $(seq 1 25); do
+        mv "friend $i.mp4" season$season
+    done
+    season =$(season+1)
+    
+done
+
+IFS=$'\n'
+for file in *.mp4;do 
+    season=1
+    mkdir season.$season
+    for i in $(seq $(1+$(($season-1)*25) $(25+$(($season-1)*25; do
+        mv "friend $i.mp4" season$season
+    done
+    season =$(season+1)
+    
+done
+ 

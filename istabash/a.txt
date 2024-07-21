@@ -1,0 +1,27 @@
+# type -a ls
+# env: shows all env variables on the system
+# /usr/bin/ls
+chmod u+x bash
+
+echo $PATH:shows the values in env variable path
+create variable:
+name=james (without space)
+get value of name:
+echo $name
+echo hello $name
+data +%A 
+echo today is d=data + %a
+d=(date +%A)
+this is correct: d=$(date +%A)
+today is $d 
+today is $(date +%A)
+redirect output too a file:
+today is $(date +%A) > ab.txt
+standard out put number is 1 and error is 2
+ to redirect errors to another  file:
+ ls /* 1>aa.txt 2>error.txt
+ to putt  both in the same place:
+ls /* 1> all.txt 2>&1
+line counter: wc -l tow.txt
+do in one line:
+ls -l | wc -l > two.txt

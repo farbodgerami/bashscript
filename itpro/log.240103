@@ -1,0 +1,5 @@
+-rw-r----- 1 syslog adm  92K ژانویه   3 16:55 /var/log/auth.log
+-rw-r----- 1 syslog adm 176K دسامبر  30 23:59 /var/log/auth.log.1
+-rw-r----- 1 syslog adm  13K دسامبر  23 23:59 /var/log/auth.log.2.gz
+-rw-r----- 1 syslog adm  17K دسامبر  16 23:59 /var/log/auth.log.3.gz
+-rw-r----- 1 syslog adm  14K دسامبر   9 23:59 /var/log/auth.log.4.gz

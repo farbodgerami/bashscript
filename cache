@@ -1,0 +1,36 @@
+#!/bin/bash
+# myfunc(){
+#     echo "name of the file: $0"
+#     echo "$1"
+#     echo "$2"
+#     echo "$2"
+#     echo "$@"
+# }
+
+# myfunc "first" "second" "3" "4"
+
+# USER=ahmad
+
+# function fname {
+#     USER=ali
+#     echo "hello ${USER}"
+# }
+
+# echo "hello ${USER}"
+# fname
+
+# echo $((20+5))
+# echo $((20-5))
+# echo $((20/5))
+# echo $((20*5))
+# echo $((5**3))
+
+# echo "There is no * in my path: $PATH"
+# echo 'There is no * in my path: $PATH'
+
+# read -p "Enter your age: " AGE
+# echo "your age: $AGE"
+
+read -p "Enter your age [37]: " AGE
+AGE=${AGE:-37}
+echo $AGE

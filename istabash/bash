@@ -1,0 +1,49 @@
+#!/bin/bash
+echo "hello world"
+ 
+
+function mytime { echo time is $(date +%H:%M);}
+
+mytime
+
+a=[ 14 -ge 2 ]
+echo $a?
+
+[ 1 -ge 2 ]
+echo $?
+
+if [ 3 -ne 3 ]; then
+echo not equal
+else
+echo equal
+fi
+
+echo $1
+echo $2
+echo $3
+# ./bash a b c
+for i in ali hasan hosein; do
+echo $i
+done
+i=0
+while [ $i -lt 10 ]; do
+echo $i
+# subshell:
+i=$((i+1))
+done
+echo $((3*5))
+expr 4-2
+let myvar=4*(2+2)
+
+until [ $i -lt 10 ]; do
+echo $i
+# subshell:
+i=$((i+1))
+done
+
+for i in $(seq 1 10); do
+echo $i
+done
+
+echo {a..f}
+for i in {a..f}; do echo $i
